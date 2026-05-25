@@ -1,46 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Local Transcription - Whisper</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Local Transcription · Whisper</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 680px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
-    h1 { font-size: 28px; margin-bottom: 4px; }
-    h2 { font-size: 18px; margin-top: 36px; color: #333; }
-    .subtitle { color: #666; font-size: 15px; margin-bottom: 40px; }
-    a { color: #0066cc; }
-    footer { margin-top: 60px; font-size: 13px; color: #999; border-top: 1px solid #eee; padding-top: 20px; }
+    :root {
+      --bg: #0f1117;
+      --fg: #e6e7eb;
+      --muted: #9ba0aa;
+      --accent: #4d8cff;
+      --border: rgba(255,255,255,0.08);
+      --card: rgba(255,255,255,0.04);
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#fff; --fg:#1a1d24; --muted:#5b6270; --accent:#1f6feb; --border:rgba(0,0,0,0.1); --card:rgba(0,0,0,0.03); }
+    }
+    * { box-sizing: border-box; }
+    html, body { background: var(--bg); color: var(--fg); margin: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.55;
+      font-size: 16px;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    h1 {
+      font-size: 28px;
+      line-height: 1.2;
+      margin: 0 0 6px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    h2 {
+      font-size: 19px;
+      margin: 36px 0 10px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    p, ul, ol { margin: 0 0 14px; }
+    ul, ol { padding-left: 22px; }
+    li { margin: 4px 0; }
+    .updated {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 28px;
+    }
+    .summary {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 20px 0 30px;
+      font-size: 15px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      background: var(--card);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.92em;
+    }
+    strong { font-weight: 600; }
+    footer {
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p class="subtitle">Local Transcription - Whisper &middot; Last updated: May 2026</p>
+<main>
 
-  <h2>No Data Collection</h2>
-  <p>Local Transcription - Whisper does not collect, store, or transmit any personal data. All speech recognition and transcription happens entirely on your device using on-device AI models (Whisper). Your audio recordings and transcripts never leave your iPhone.</p>
+<h1>Privacy Policy — Local Transcription · Whisper</h1>
+<p class="updated">Last updated: 25 May 2026</p>
 
-  <h2>Microphone Access</h2>
-  <p>The app requests microphone access solely to record audio for transcription. Recordings are processed locally and are never uploaded to any server.</p>
+<div class="summary">
+  Local Transcription · Whisper runs <strong>entirely on your iPhone by default</strong>.
+  Your recordings and the resulting transcripts stay on the device — they are
+  not sent to us or to any third party. The only data that ever leaves your
+  device is audio you explicitly choose to transcribe in the cloud, and only
+  when you have purchased and activated a paid Cloud Transcription subscription.
+</div>
 
-  <h2>Cloud Transcription (optional)</h2>
-  <p>If you enable the OpenAI cloud engine, the audio you choose to transcribe is uploaded to OpenAI, L.L.C. (gpt-4o-transcribe API) over an encrypted connection, transcribed, and the text returned to your device. Audio sent via OpenAI's API is not used to train their models. This is optional and off by default — the on-device engine keeps all data on your iPhone. See OpenAI's privacy policy: openai.com/policies/privacy-policy.</p>
+<h2>Data we collect</h2>
 
-  <h2>No Analytics or Tracking</h2>
-  <p>The app contains no analytics SDKs, no crash reporting tools, no advertising frameworks, and no third-party tracking of any kind.</p>
+<p><strong>On-device mode (default).</strong> None. No telemetry, no analytics,
+no account. Recordings, transcripts, settings, and any saved audio files are
+stored only on your iPhone (and, if you enable it in Settings, in your private
+iCloud Documents container, which only you can access).</p>
 
-  <h2>No Accounts Required</h2>
-  <p>No account, login, or personal information is required to use this app.</p>
+<p><strong>Cloud Transcription mode (optional, requires a Plus or Pro
+subscription).</strong> When you choose to transcribe a recording in the
+cloud, the following is sent:</p>
 
-  <h2>Data Storage</h2>
-  <p>All transcripts and recordings are stored locally on your device only. You have full control over your data and can delete it at any time from within the app.</p>
+<ul>
+  <li><strong>The audio file you chose to transcribe.</strong> Nothing else
+    — no contacts, no identifiers tied to your real identity, no usage
+    statistics.</li>
+  <li><strong>A signed transaction token from Apple (StoreKit 2 JWS).</strong>
+    This lets our server confirm that you have an active subscription and
+    tally usage against your monthly quota. The token contains an anonymous
+    Apple-generated <code>originalTransactionId</code> — it does <em>not</em>
+    contain your Apple ID, email, name, or any other identifier we can tie
+    back to you.</li>
+  <li><strong>The duration of the audio segment</strong> (so we can apply
+    your quota before uploading it).</li>
+</ul>
 
-  <h2>Children's Privacy</h2>
-  <p>This app does not knowingly collect any information from children under 13.</p>
+<p>We do <strong>not</strong> collect: your name, email address, Apple ID,
+phone number, IP address (beyond standard server logs needed for security and
+abuse prevention), device identifiers, contacts, location, or any analytics
+about how you use the app.</p>
 
-  <h2>Contact</h2>
-  <p>If you have questions about this privacy policy, please contact: <a href="mailto:chrhanft@gmail.com">chrhanft@gmail.com</a></p>
+<h2>Where the data goes</h2>
 
-  <footer>© 2026 Christoph Hanft · All rights reserved</footer>
+<p>Cloud transcription requests are sent over an encrypted (HTTPS) connection
+to our backend, hosted on <strong>Cloudflare Workers</strong> (operated by
+Cloudflare, Inc., USA). The backend immediately forwards the audio to
+<strong>OpenAI's gpt-4o-transcribe API</strong> (operated by OpenAI, L.L.C.,
+USA), receives the text back, and returns it to your iPhone.</p>
+
+<ul>
+  <li><strong>Cloudflare</strong> sees the audio in transit and standard
+    network metadata (IP, timestamps). Cloudflare does not store or look at
+    the audio content.</li>
+  <li><strong>OpenAI</strong> processes the audio to produce the transcript.
+    Per <a href="https://openai.com/policies/api-data-usage-policies/">OpenAI's
+    API data policy</a>, audio sent through the API is
+    <strong>not used to train OpenAI's models</strong> and is deleted after
+    processing.</li>
+  <li><strong>We (the app maintainer)</strong> never store the audio you
+    upload. The only thing we persist is a per-subscriber
+    <strong>anonymous usage counter</strong> (audio seconds used in the current
+    billing period) keyed by your <code>originalTransactionId</code>. This
+    counter is needed to enforce your monthly quota and is automatically
+    deleted ~60 days after your subscription period ends.</li>
+</ul>
+
+<h2>Subscriptions</h2>
+
+<p>Cloud Transcription is offered as an auto-renewing monthly subscription
+(Plus 5 h/month or Pro 20 h/month) via Apple's In-App Purchase. Apple handles
+the payment — we never see your payment information. You can manage and cancel
+your subscription at any time in the Settings app on iPhone under your
+Apple ID → Subscriptions.</p>
+
+<h2>Tip Jar</h2>
+
+<p>The in-app coffee tips are one-time Apple In-App Purchases. We receive no
+information about who tipped — only an anonymous payment confirmation from
+Apple.</p>
+
+<h2>Your rights</h2>
+
+<p>Because we don't collect any account or personal data, there is nothing
+for us to delete on request. If you want to stop using Cloud Transcription,
+just switch the engine back to On-Device in Settings — nothing further is
+sent. To delete your locally stored transcripts, delete them in the app (and,
+if iCloud sync is enabled, in the Files app under iCloud Drive).</p>
+
+<h2>Children</h2>
+
+<p>The app is not directed at children under 13.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If we make material changes (e.g. add a new cloud subprocessor), we will
+update this page and bump the "Last updated" date above.</p>
+
+<h2>Contact</h2>
+
+<p>Questions? Email <a href="mailto:chrhanft@gmail.com">chrhanft@gmail.com</a>.</p>
+
+<footer>
+  © 2026 Christoph Hanft · Local Transcription · Whisper.
+</footer>
+
+</main>
 </body>
 </html>
